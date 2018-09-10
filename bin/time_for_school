@@ -50,9 +50,11 @@ bill.learn(avi.teach) #This simplifies things a LOT!
 #alan.knowledge.each {|piece_of_knowledge| puts piece_of_knowledge}
 
 [steve, alan, bill].each do |student|
-  puts 
+  puts "\n#{student.first_name} #{student.last_name} now knows:"
   student.knowledge.each do |piece_of_knowledge|
-    
+    puts piece_of_knowledge
+  end 
+end
 
 puts "\nWow! Avi has taught his students a lot!"
 puts "#{jim.first_name} #{jim.last_name} will give him a high mark for sure!"
