@@ -39,6 +39,11 @@ alan.learn(some_knowledge)
 alan.learn(some_more_important_knowledge)
 alan.learn(some_even_more_important_knowledge)
 
+bill = Student.new 
+bill.first_name = "Bill"
+bill.last_name = "Gates"
+bill.learn(avi.teach) #This simplifies things a LOT!
+
 puts "\n#{steve.first_name} #{steve.last_name} now knows:"
 steve.knowledge.each {|piece_of_knowledge| puts piece_of_knowledge}
 puts"\n#{alan.first_name} #{alan.last_name} now knows:"
