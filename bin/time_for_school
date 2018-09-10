@@ -50,6 +50,7 @@ bill.learn(avi.teach) #This simplifies things a LOT!
 #alan.knowledge.each {|piece_of_knowledge| puts piece_of_knowledge}
 
 [steve, alan, bill].each do |student|
+  puts 
   student.knowledge.each do |piece_of_knowledge|
     
 
