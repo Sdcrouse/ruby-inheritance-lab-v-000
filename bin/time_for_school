@@ -44,10 +44,14 @@ bill.first_name = "Bill"
 bill.last_name = "Gates"
 bill.learn(avi.teach) #This simplifies things a LOT!
 
-puts "\n#{steve.first_name} #{steve.last_name} now knows:"
-steve.knowledge.each {|piece_of_knowledge| puts piece_of_knowledge}
-puts"\n#{alan.first_name} #{alan.last_name} now knows:"
-alan.knowledge.each {|piece_of_knowledge| puts piece_of_knowledge}
+#puts "\n#{steve.first_name} #{steve.last_name} now knows:"
+#steve.knowledge.each {|piece_of_knowledge| puts piece_of_knowledge}
+#puts"\n#{alan.first_name} #{alan.last_name} now knows:"
+#alan.knowledge.each {|piece_of_knowledge| puts piece_of_knowledge}
+
+[steve, alan, bill].each do |student|
+  student.knowledge.each do |piece_of_knowledge|
+    
 
 puts "\nWow! Avi has taught his students a lot!"
 puts "#{jim.first_name} #{jim.last_name} will give him a high mark for sure!"
